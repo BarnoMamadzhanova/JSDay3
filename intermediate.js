@@ -38,27 +38,42 @@
 //     console.log(averageGrade);
 // };
 
-const classGrades = [74.4, 68.4, 78.4, 78.4, 84];
+// const classGrades = [74.4, 68.4, 78.4, 78.4, 84];
 
-const getAvgGrades = (numbers) => {
-    let sum1 = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        sum1 += numbers[i];
+// const getAvgGrades = (numbers) => {
+//     let sum1 = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         sum1 += numbers[i];
+//     }
+//     return sum1/numbers.length;
+// };
+
+// let averageClass = getAvgGrades(classGrades);
+//  if ( averageClass < 60) {
+//     console.log('F');
+//  } else if ( averageClass < 70) {
+//     console.log('D');
+//  } else if ( averageClass < 80) {
+//     console.log('C');
+//  } else if (averageClass < 90) {
+//     console.log('B');
+//  } else if (averageClass < 100) {
+//     console.log('A');
+//  } else {
+//     console.log('E');
+// };
+
+// ex 2 | FizzBuzz
+
+
+for ( let i = 1; i < 100; i++) {
+    if ( i % 5 === 0 && i % 3 === 0 ) {
+        console.log(`FizzBuzz`);
+    } else if ( i % 5 === 0 ) {
+        console.log(`Buzz`);
+    } else if ( i % 3 === 0) {
+        console.log(`Fizz`);
+    } else {
+        console.log(i);
     }
-    return sum1/numbers.length;
-};
-
-let averageClass = getAvgGrades(classGrades);
- if ( averageClass < 60) {
-    console.log('F');
- } else if ( averageClass < 70) {
-    console.log('D');
- } else if ( averageClass < 80) {
-    console.log('C');
- } else if (averageClass < 90) {
-    console.log('B');
- } else if (averageClass < 100) {
-    console.log('A');
- } else {
-    console.log('E');
-};
+}
