@@ -13,19 +13,30 @@ body {
 }
 
 img {
-    width: 100%;
+    width: fit-content;
     /* height:auto; */
     opacity: 0.4;
-    position: relative;
+    /* position: relative; */
 }
 
-#h1 {
+/* #h1 {
     position: absolute;
     margin: auto;
     padding: auto;
     font-size: 3rem;
     font-weight: bolder;
     color: rgb(35, 35, 98);
+} */
+
+.btn {
+    position: absolute;
+    margin: auto;
+    padding: 2rem;
+    color: rgb(65, 65, 170);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+
 }
 
 @media screen and (width < 768px) {
